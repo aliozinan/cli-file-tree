@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/alio/cli-file-tree/downloads.png)](https://packagist.org/packages/alio/cli-file-tree)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/aliozinan/cli-file-tree/issues)
 [![HitCount](http://hits.dwyl.io/aliozinan/cli-file-tree.svg)](http://hits.dwyl.io/aliozinan/cli-file-tree)
-[![License](https://poser.pugx.org/alio/cli-file-tree/license)](https://packagist.org/packages/alio/cli-file-tree)
+[![License](https://poser.pugx.org/alio/cli-file-tree/license)](https://github.com/aliozinan/cli-file-tree/blob/master/LICENSE.md)
 
 Laravel CLI utility for file selection with a menu interface using [PHP School / CliMenu](https://github.com/php-school/cli-menu)
 
