@@ -10,3 +10,4 @@
 /phpunit.xml.dist   export-ignore
 /tests              export-ignore
 /.editorconfig      export-ignore
+/cli-file-tree-screenshot.jpg     export-ignore
