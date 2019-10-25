@@ -56,6 +56,10 @@ echo 'selected file path : ' . $file;
 
 ```
 
+## Screenshot
+
+<img src="https://raw.githubusercontent.com/aliozinan/cli-file-tree/stable/cli-file-tree-screenshot.jpg" />
+
 ### Testing
 
 ``` bash
