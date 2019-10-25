@@ -1,0 +1,49 @@
+{
+    "name": "alio/cli-file-tree",
+    "description": "CLI utility for file selection with a menu interface using PHPSchool/CliMenu.",
+    "keywords": [ "php", "laravel", "cli", "file", "tree", "menu", "navigation" ],
+    "homepage": "https://github.com/aliozinan/cli-file-tree",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ali Ozinan",
+            "email": "aozinan@gmail.com"
+        }
+    ],
+    "require": {
+        "php-school/cli-menu": "^3.2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alio\\CliFileTree\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alio\\CliFileTree\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alio\\CliFileTree\\CliFileTreeServiceProvider"
+            ],
+            "aliases": {
+                "CliFileTree": "Alio\\CliFileTree\\CliFileTreeFacade"
+            }
+        }
+    }
+}
