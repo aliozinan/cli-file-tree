@@ -26,7 +26,7 @@ You can also filter the files by (multiple) file extensions using the --filter o
 
 php artisan clifiletree [--filter=?] [--fg=?] [--bg=?]
 
---filter : (optional) filter files by extensions. Supports multiple filters by seperating with comma (Ex: csv,xls)
+--filter : (optional) filter folders only or files by extensions. use 'folder' to display folders only. Supports multiple file extension filters by seperating with comma (Ex: csv,xls)
   --fg : (optional) foreground color (def. green)
   --bg : (optional) background color (def. black)
 
