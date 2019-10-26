@@ -33,7 +33,7 @@ class CliFileTree extends Command
      */
     protected $description = 'Helps selecting a file using a menu interface with navigation 🎉
 
-  --filter : (optional) set folder only or filter files by extensions. Supports multiple file extension filters by seperating with comma (Ex: csv,xls)
+  --filter : (optional) set "folder" only or filter files by extensions. Supports multiple file extension filters by seperating with comma (Ex: csv,xls)
   --fg : (optional) foreground color (def. green)
   --bg : (optional) background color (def. black)
 
@@ -48,7 +48,7 @@ class CliFileTree extends Command
     /**
      * Final selected item
      */
-    private $selectedPath;
+    private $selectedItem;
 
     /**
      * Current directory path
@@ -102,7 +102,7 @@ class CliFileTree extends Command
     */
     public function startFileMenu()
     {
-        $this->selectedPath = '';
+        $this->selectedItem = '';
 
         $this->currentdir = $this->get_home_dir();
 
@@ -161,8 +161,8 @@ class CliFileTree extends Command
         /* show time! */
         $this->menu->open();
 
-        if ($this->selectedPath != '') {
-            $this->line($this->selectedPath);
+        if ($this->selectedItem != '') {
+            $this->line($this->selectedItem);
         }
     }
 
@@ -237,7 +237,7 @@ class CliFileTree extends Command
         $target = str_replace("[DIR] ", "", $menu->getSelectedItem()->getText());
 
         if ($target == ".") {
-            $this->selectedPath = $this->currentdir;
+            $this->selectedItem = $this->currentdir;
             $this->menu->close();
         } elseif ($target == "..") {
             $this->menuNavigate($target);
@@ -245,7 +245,7 @@ class CliFileTree extends Command
             if (@is_dir($this->currentdir . '/' . $target)) {
                 $this->menuNavigate($target);
             } else {
-                $this->selectedPath = $this->currentdir . '/' . $menu->getSelectedItem()->getText();
+                $this->selectedItem = $this->currentdir . '/' . $menu->getSelectedItem()->getText();
                 $this->menu->close();
             }
         }

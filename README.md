@@ -18,7 +18,7 @@ composer require alio/cli-file-tree
 
 ## Usage
 
-This CLI command basically allows you to select a file on your system using a menu interface with navigation feature and return the selected file's path.
+This Laravel CLI utility basically allows you to select a folder or a file on your system using a menu interface with navigation feature and return the selected file's path.
 
 You can also filter the files by (multiple) file extensions using the --filter option.
 
@@ -26,7 +26,7 @@ You can also filter the files by (multiple) file extensions using the --filter o
 
 php artisan clifiletree [--filter=?] [--fg=?] [--bg=?]
 
---filter : (optional) filter folders only or files by extensions. use 'folder' to display folders only. Supports multiple file extension filters by seperating with comma (Ex: csv,xls)
+--filter : (optional) display only folders or certain file types by extensions. Use 'folder' to display folders only. Supports multiple file extension filters by seperating with comma (Ex: csv,xls)
   --fg : (optional) foreground color (def. green)
   --bg : (optional) background color (def. black)
 
@@ -47,9 +47,8 @@ $output = new BufferedOutput;
 Artisan::call('clifiletree', ['--filter' => 'csv'], $output);
 
 $file = $output->fetch();
-echo 'selected file path : ' . $file;
 
-// do whatever you want with the file
+// do whatever you want with the $file
 
 ...
 
@@ -68,6 +67,7 @@ composer test
 ## Additional Notes
 
 This package requires PHP posix extension enabled, it may not work in Windows Wamp/Xampp environments.
+Compatibility with the new Windows Terminal is being investigated.
 
 ### Changelog
 
