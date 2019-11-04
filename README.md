@@ -1,6 +1,6 @@
 # Laravel CLI File Tree Menu (w/ navigation)
 
-[![Build Status](https://travis-ci.org/aliozinan/cli-file-tree.svg?branch=master)](https://travis-ci.org/aliozinan/cli-file-tree)
+[![Build Status](https://travis-ci.org/aliozinan/cli-file-tree.svg?branch=v1.0.0)](https://travis-ci.org/aliozinan/cli-file-tree)
 [![Total Downloads](https://poser.pugx.org/alio/cli-file-tree/downloads.png)](https://packagist.org/packages/alio/cli-file-tree)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/aliozinan/cli-file-tree/issues)
 [![HitCount](http://hits.dwyl.io/aliozinan/cli-file-tree.svg)](http://hits.dwyl.io/aliozinan/cli-file-tree)
